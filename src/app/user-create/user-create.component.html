@@ -1,0 +1,28 @@
+<div id="main">
+
+    <div id="titulo-topo">
+        <p>Criar</p>
+    </div>
+
+    <div id="formulario">
+        <form #formUser (submit)="saveUser(formUser)">
+            <fieldset>
+                <div>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome" #nome [(ngModel)]="user.nome">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label><br>
+                    <input type="text" name="email" id="email" #email [(ngModel)]="user.email">
+                </div>
+                <div>
+                    <label for="contato">Contato:</label><br>
+                    <input type="text" name="contato" id="contato" #contato [(ngModel)]="user.contato">
+                </div>
+
+                <input class="submit" type="submit" value="Salvar">
+            </fieldset>
+        </form>
+    </div>
+
+</div>
