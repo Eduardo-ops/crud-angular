@@ -1,5 +1,5 @@
 export interface User {
-    nome?: string,
-    email?: string
-    contato?: string
+    nome: string,
+    email: string
+    contato: string
 }
