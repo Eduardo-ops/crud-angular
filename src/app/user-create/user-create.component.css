@@ -34,7 +34,7 @@ fieldset{
 
 /* Elemento com id "formulario" */
 #formulario{
-    margin: 20px;
+    margin: 40px;
     font-size: 1.4em;
     color: #2F4F4F;
     font-family: Arial Narrow, sans-serif;
@@ -46,11 +46,10 @@ input{
     border-radius: 5px;
     outline-color: #BCD2EE;
     margin: 10px 0 30px 0;
-    padding: 15px;
+    padding: 8px;
     color: #2F4F4F;
     width: 95%;
-    font-size: 1em;
-    
+    font-size: 0.8em;
 }
 
 /* Elemento <input> com classe "submit" */
