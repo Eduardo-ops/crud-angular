@@ -23,7 +23,7 @@ export class UserService {
 
     //UPDATE
     updateUser(user: User): Observable<User> {
-        const url = `${this.url}/${user.nome}`
+        const url = `${this.url}/${user.id}`
         return this.http.put<User>(url, user)
     }
 
