@@ -2,6 +2,7 @@ import { User } from './users.model';
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { DEFAULT_MIN_VERSION } from 'tls';
 
 @Injectable({
     providedIn: 'root'
@@ -21,6 +22,10 @@ export class UserService {
     }
 
     //UPDATE
+    updateUser(user: User): Observable<User> {
+        const url = `${this.url}/${user.nome}`
+        return this.http.put<User>(url, user)
+    }
 
     // READ
     getAllUsers(): Observable<User[]> {
